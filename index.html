@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Health Details</title>
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="home-page">
+        <h1>Weather And Health Details</h1>
+        <img src="img/raining.png" class="weather-icon">
+        <div id="location-input">
+            <input type="text" id="location" placeholder="Enter a city name">
+            <button class="button-81" onclick="showDetails()">
+                <i class="fas fa-search"></i> 
+                Search
+            </button>
+        </div>
+    </div>
+    <div class="container hidden" id="details-page">
+        <div id="weather-details" class="details-box hidden">
+            <h2>Weather Details</h2>
+            <br>
+            <div class="detail-item" id="temperature-box">
+                <i class="fas fa-thermometer-half"></i>
+                <p id="temperature"></p>
+            </div>
+            <div class="detail-item" id="humidity-box">
+                <i class="fas fa-tint"></i>
+                <p id="humidity"></p>
+            </div>
+            <div class="detail-item" id="wind-box">
+                <i class="fas fa-wind"></i>
+                <p id="wind"></p>
+            </div>
+            <div class="detail-item" id="cloud-box">
+                <i class="fas fa-cloud"></i>
+                <p id="cloud"></p>
+            </div>
+        </div>
+        
+        <div id="health-details" class="details-box hidden">
+            <h2>Health Details</h2>
+            <br>
+            <div class="detail-item" id="uv-index-box">
+                <i class="fas fa-sun"></i>
+                <p id="uv-index"></p>
+            </div>
+            <div class="detail-item" id="air-quality-box">
+                <i class="fas fa-smog"></i>
+                <p id="air-quality"></p>
+            </div>
+            <div class="detail-item" id="air-quality-advice-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="air-quality-advice"></p>
+            </div>
+            <div class="detail-item" id="precaution-advice-box">
+                <i class="fas fa-user-shield"></i>
+                <p id="precaution-advice"></p>
+            </div>
+        </div>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>
