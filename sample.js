@@ -67,7 +67,7 @@ function fetchUVIndex() {
         });
 }
 function fetchAirQuality(latitude, longitude, apiKey) {
-    fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching air quality data');
